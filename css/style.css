@@ -1,0 +1,100 @@
+body {
+	/*user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;*/
+}
+
+#bgimg {
+	/*background-color: grey;*/
+	background:#FFFFFF url(../images/Background.png) no-repeat;
+	position: fixed;
+ 	top: 0;
+  	left: 0;
+  	height: 100vw;
+  	width: 100vw;
+}
+
+#thought-bubble #thoughts{
+	display:none;
+	margin-top: 350px;
+	margin-left: 10px;
+	position: relative;
+	z-index: 10;
+}
+#thought-topic {
+	/*display:none;*/
+	margin-top: 390px;
+	margin-left: 55px;
+	font-family: 'Indie Flower', cursive;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#background-snow img {
+	opacity: 0.90;
+	margin-left: 500px;
+	margin-top: 150px;*/
+	height: 400px;
+	width: 800px;
+	z-index: 100;
+	position:relative;
+
+}
+#foreground-snow img{
+	height: 300px;
+	width: 780px;
+	margin-left: 500px;
+	margin-top: 170px;
+}
+
+#background-floor img {
+	position:relative;
+	margin-top: 540px;
+	margin-left: 100px;
+}
+
+#foreground-floor img {
+	position:fixed;
+	margin-top: 550px;
+	margin-left: 0;
+}
+
+
+#snowman img{
+	position: relative;
+	margin-left: 180px;
+	margin-top: 400px;
+	cursor: grab;
+  cursor: -webkit-grab;
+  z-index: 5;
+
+}
+
+#cloudOne img {
+	cursor: pointer;
+	margin-left: 950px;
+	margin-top: 10px;
+}
+
+#cloudTwo img{
+	cursor: pointer;
+	margin-left: 600px;
+	margin-top: 18px;
+}
+#cloudThree img{
+	cursor: pointer;
+	margin-left: 250px;
+	margin-top: 10px;
+}
+.about-me{
+
+}
+.contact{
+
+}
+.portfolio{
+
+}

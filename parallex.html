@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parallex Testing</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="javascript/jquery.js"></script>
+
+</head>
+<body>
+	<!-- <div id="bgimg"> -->
+		<!-- <ul id="scene">
+			<li class="layer" id="background-snow" data-depth="0.50"><img src="images/BackgroundSnow.png"></li>
+			<li class="layer" id="background-floor" data-depth="0.10"><img src="images/BackgroundFloor.png"></li>
+			<li class="layer" id="foreground-floor" data-depth="0.30"><img src="images/ForeGroundFloor.png"></li>
+			<li class="layer" id="cloudOne" data-depth="0.60"><img src="images/CloudOne.png"></li>
+			<li class="layer" id="cloudTwo" data-depth="0.60"><img src="images/CloudTwo.png"></li>
+			<li class="layer" id="cloudThree" data-depth="0.60"><img src="images/CloudThree.png"></li>
+			<li class="layer" id="snowman" data-depth="0.30"><img src="images/SnowMan.png"></li> -->
+			<!-- <li class="layer" id="foreground-snow" data-depth="0.90"><img src="images/ForeGoundSnow.png"></li> -->
+			<!-- <li class="layer" id="thought-bubble" data-depth="0.30"><img id="thoughts" src="images/Thoughts.png"></li>
+			<li class="layer" id="thought-topic" data-depth="0.30"></li>
+		</ul> -->
+	<!-- </div> -->
+	<div class="about-me">About me</div>
+	<div class="contact">Contact</contact>
+	<div class="portfolio">Portfolio</contact>
+
+
+	<!-- Scripts -->
+	<script src="deploy/parallax.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+		<script>
+
+	$(document).ready(function(){
+
+		var animate = function(){
+			$("#cloudOne").delay(1000).animate({top: "+=10"}, 6000,'linear').delay(1000).animate({top: "-=10"}, 8000,'linear');
+			$("#cloudTwo").delay(2000).animate({top: "-=5"}, 7000,'linear').delay(1000).animate({top: "+=5"}, 9000,'linear');
+			$("#cloudThree").delay(1000).animate({top: "-=8"}, 8000,'linear').delay(3000).animate({top: "+=8"}, 6000,'linear');
+			$("#foreground-snow").animate({top: "-=40"}, 6000).delay(1000).animate({top: "+=40"}, 8000);
+			$("#background-snow").animate({top: "+=80"}, 6000).delay(1000).animate({top: "-=80"}, 8000, animate);
+	  	}
+		animate();
+
+	});
+	</script>
+	<script>
+
+	$(document).ready(function(){
+		var thought;
+		var thoughtsArray = ["Pikachu","Bulbasour","Chamander"];
+
+		var clearThoughts = function(){
+
+			$("#thought-topic").fadeOut('2000', function(){
+				$(this).text("");
+				console.log("thoughts cleared!");
+			});
+
+		}
+
+		var randomThoughts = function(){
+
+			thought = thoughtsArray[Math.floor(Math.random()*(thoughtsArray.length))];
+			console.log (thought);
+
+			$("#thought-topic").text(thought).fadeIn('2000', function () {
+    			setTimeout(clearThoughts, 2000);
+  			});
+
+		}
+
+		var think = function(){
+
+			setInterval (function(){
+				$("#thoughts").fadeIn('slow',randomThoughts).delay(2000).fadeOut('slow');
+			}, 9000);
+
+		}
+
+		// think();
+		$("#snowman").children('img').hover(
+			function(){
+				$(this).attr('src','images/SnowMan2.png');
+			},function(){
+				$(this).attr('src','images/SnowMan.png')
+			});
+
+		$('#cloudOne').children('img').on('click', function(){
+			console.log("heys!");
+		});
+		$('#cloudTwo').children('img').on('click', function(){
+			console.log("heys!");
+		});
+		$('#cloudThree').children('img').on('click', function(){
+			console.log("heys!");
+		});
+	});
+
+
+	</script>
+</body>
+</html>
