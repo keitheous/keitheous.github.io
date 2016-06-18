@@ -1,6 +1,8 @@
 body {
 	font-family: 'Indie Flower', cursive;
 	background:#FFFFFF url(../images/Background.png) no-repeat center center fixed;
+	width: 1200px;
+	height: 800px;
 	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
