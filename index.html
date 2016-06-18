@@ -1,11 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
+	<meta charset="UTF-8">
+	<title>Parallex Testing</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="javascript/jquery.js"></script>
+	<script src="https://use.fontawesome.com/daea4f2c75.js"></script>
+
 </head>
 <body>
-  <h1>Welcome! This site is currently under construction.</h1>
+	<div class="background">
+			<ul id="scene">
+				<li class="layer" id="about-me" data-depth="0">
+						<h1>About me</h1>
+						<p>	I graduated with a Degree in Robotics & Mechatronics Engineering and have been working in Hospitality for a while before I decided, with the encouragement of my loved ones, to make the bold decision to take the risk and pursue my passion in Web Development. </p>
 
+						<p> I signed up with General Assembly Melbourne and was well on my way to becoming a Full Stack Web Developer. During the intensive  Web Development Course with GA, we were taught the up-to-date technologies in the Software Development field for the internet. The learning is fast paced and very detailed. </p>
+
+						<p> My strength is definitely my personality. I have a curious mind and treat learning as a life long journey. I am willing to take action and follow through. Above all, I have the tenacity and perseverance to rise from my failures. I am well versed in both ends of Web Development, although my strengths are prominent in the Back End (Server Side). I love Ruby on Rails and JavaScript. I am an awesome Scrum Master who enjoys Pair Programming and is capable of pulling my own weight in group projects. </p>
+
+						<p> I bake occasionally to bring people together, sing out loud in the shower to relief stress and enjoy meeting new people. I am determined to be ONE OF THE MOST SUCCESSFUL PERSON in the Tech Industry through Web Development someday as I owe it to my loved ones and myself to see this through. </p>
+						<a id="next-page" href="#">next page <span class="fa fa-hand-o-right" aria-hidden="true"></span></a>
+				</li>
+				<li class="layer" id="second-page" data-depth="0">
+					<h1>Projects</h1>
+						<div id="projects">
+							<div id="project-1">
+								<a href="#">
+								<h3>Super Duper Happy</h3>
+								<img class="project-images" src="images/feelgoodapp.png"></a>
+								<p>A blog site for users to share their happy and inspiring stories in the attempt to combat depression. User's are able to signup/login, post stories, and comment.</p>
+							</div>
+							<div id="project-2">
+								<a href="#">
+								<h3>TrvlNotes</h3>
+								<img class="project-images" src="images/trvlNotes.png"></a>
+								<p>A dedicated travel bookmarking list that you use daily while at home, and can sort and view your dream places quickly while you are abroad.</p>
+							</div>
+							<div id="project-3">
+								<a href="#">
+								<h3>WDI Conference</h3>
+								<img class="project-images" src="images/wdiconf2016.png"></a>
+								<p>WDI Conference is a mock technology conference run by the students of General Assembly that includes Conference Brochures, Ticket Booking System, and <a href="http://keitheous.com/gimmick-for-wdi-conference/" class="">Gimmick.</a></p>
+							</div>
+							<div id="project-4">
+								<a href="http://keitheous.com/pandagame/">
+								<h3>Run Panda Run</h3>
+								<img class="project-images" src="images/runpandarun.png"></a>
+								<p>A problem solving game. A male panda accidentally mistake for a female panda put in the breeding pen during mating season. Plan your escape.</p>
+							</div>
+						</div>
+					<h1>Contacts</h1>
+						<div id="contacts">
+							<div><a href="https://www.instagram.com/keitheous/"><span id="instagram-icon" class="fa fa-instagram" aria-hidden="true"></span></a></div>
+							<div><a  href="https://github.com/keitheous"><span id="github-icon" class="fa fa-github" aria-hidden="true"></span></a></div>
+							<div><a href="https://www.linkedin.com/in/keitheous"><span id="linkedin-icon" class="fa fa-linkedin" aria-hidden="true"></span></a></div>
+						</div>
+					<a id="back-page" href="#"><span class="fa fa-hand-o-left" aria-hidden="true"><br></span> previous page</a>
+				</li>
+
+				<li class="layer" id="background-snow" data-depth="0.10"><img src="images/BackgroundSnow.png"></li>
+				<li class="layer hide" id="background-floor" data-depth="0.10"><img src="images/BackgroundFloor.png"></li>
+				<li class="layer" id="foreground-floor" data-depth="0.30"><img src="images/ForeGroundFloor.png"></li>
+				<li class="layer hide" id="cloudThree" data-depth="0.50"><img src="images/CloudThree.png"></li>
+				<li class="layer hide" id="cloudTwo" data-depth="0.60"><img src="images/CloudTwo.png"></li>
+				<li class="layer hide" id="cloudOne" data-depth="0.70"><img src="images/CloudOne.png"></li>
+				<li class="layer" data-depth="0.30"><img id="snowman" src="images/SnowMan.png"></li>
+				<li class="layer" id="foreground-snow" data-depth="0.90"><img src="images/ForeGoundSnow.png"></li>
+				<li class="layer" id="thought-bubble" data-depth="0.40"><img id="thoughts" src="images/Thoughts.png"></li>
+				<li class="layer" id="thought-topic" data-depth="0.40"></li>
+			</ul>
+	</div>
+
+
+
+	<!-- Scripts -->
+	<script src="deploy/parallax.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+		<script>
+
+	$(document).ready(function(){
+
+
+		var animate = function(){
+			$("#cloudOne").delay(1000).animate({top: "+=10"}, 6000,'linear').delay(1000).animate({top: "-=10"}, 8000,'linear');
+			$("#cloudTwo").delay(2000).animate({top: "-=5"}, 7000,'linear').delay(1000).animate({top: "+=5"}, 9000,'linear');
+			$("#cloudThree").delay(1000).animate({top: "-=8"}, 8000,'linear').delay(3000).animate({top: "+=8"}, 6000,'linear');
+			$("#foreground-snow").animate({top: "-=40"}, 6000).delay(1000).animate({top: "+=40"}, 8000);
+			$("#background-snow").animate({top: "+=80"}, 6000).delay(1000).animate({top: "-=80"}, 8000, animate);
+	  	}
+		animate();
+
+	});
+	</script>
+	<script>
+
+	$(document).ready(function(){
+
+		var thought;
+		var timeBubble = false;
+		var thoughtsArray = ["Cupcakes","Alistair M","Scrum","G.O.T","Stark","Hanaichi","WDI6","Fassbender","Chris","Bevin","Flo","A.J.M","Johan","D.T","Salmon","Katty D","Wolfie","Lauren JK","Emily B","JB","Hugh M","Chao Chi ..","Aly-main","G.Easton","Karina T","Christie M","Matt M","React","AngularJS","C.S.S","HODOR!!","Z-Index","Parallex!","Paulina S","iterm8s!"];
+
+		var clearThoughts = function(){
+
+			$("#thought-topic").fadeOut('2000', function(){
+				$(this).text("");
+			});
+
+		}
+
+		var randomThoughts = function(){
+			if (!timeBubble) {
+				thought = thoughtsArray[Math.floor(Math.random()*(thoughtsArray.length))];
+				// console.log (thought);
+			}
+			else {
+				thought = "success.."
+			}
+
+			$("#thought-topic").text(thought).fadeIn('2000', function () {
+    			setTimeout(clearThoughts, 2000);
+  			});
+
+		}
+
+		var think = function(){
+
+			setInterval (function(){
+				$("#thoughts").fadeIn('slow',randomThoughts).delay(2000).fadeOut('slow');
+			}, 9000);
+
+		}
+		think();
+		$('#snowman').on('click', function(){
+			if ($(this).hasClass('opened-log')){
+				$(this).removeClass('opened-log');
+				$(this).attr('src','images/SnowMan.png');
+				console.log("close log!");
+				timeBubble = false;
+				$("#thought-bubble").show();
+				$(".hide").css("opacity", "1.0");
+				$("#about-me").css({ "opacity": "0.00 ","z-index": "-100"});
+				$("#second-page").css({ "opacity": "0.0 ","z-index": "-110"});
+
+			} else {
+				$(this).addClass('opened-log');
+				$(this).attr('src','images/SnowMan2.png');
+				console.log("open log!");
+				timeBubble = true;
+				$("#thought-bubble").hide();
+				$(".hide").css("opacity", "0.3");
+				$("#about-me").css({ "opacity": "1.0 ","z-index": "100"});
+
+			}
+		})
+
+		// $("#second-page").css({ "opacity": "1.0 ","z-index": "100"});
+		$('#next-page').on('click',function(){
+			console.log('next page!');
+			$("#about-me").css({ "opacity": "0.0 ","z-index": "-100"});
+			$("#second-page").css({ "opacity": "1.0 ","z-index": "100"});
+		})
+		$('#back-page').on('click',function(){
+			console.log('next page!');
+			$("#about-me").css({ "opacity": "1.0 ","z-index": "100"});
+			$("#second-page").css({ "opacity": "0.0 ","z-index": "-100"});
+		})
+
+
+	})
+
+	</script>
 </body>
 </html>
