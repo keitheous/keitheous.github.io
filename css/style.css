@@ -1,4 +1,6 @@
 body {
+	max-height: 700px;
+	max-width: 1450px;
 	font-family: 'Indie Flower', cursive;
 	background:#FFFFFF url(../images/Background.png) no-repeat;
 	user-drag: none;
