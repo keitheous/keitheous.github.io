@@ -17,6 +17,7 @@ body {
 	z-index: 10;
 }
 #thought-topic {
+	/*padding-left:5px; */
 	display:none;
 	margin-top: 390px;
 	margin-left: 55px;
@@ -120,17 +121,29 @@ p {
 }
 #projects {
 	/*background-color: red;*/
-	height: 300px;
-	width: 950px;
+	height: 325px;
+	width: 1000px;
 	display: inline-block;
+}
+h3{
+	margin: 5px auto;
+	text-decoration: underline;
+}
+.project-images{
+	height: 100px;
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+
+
 }
 #project-1, #project-2, #project-3, #project-4 {
 	border-radius: 20px;
 	float: left;
-	height: 300px;
-	width: 225px;
+	height: 325px;
+	width: 240px;
 	margin: auto 5px;
-	background: rgba(255, 255, 255, 1);
+	/*background: rgba(255, 255, 255, 1);*/
 }
 
 #contacts {
@@ -148,6 +161,6 @@ p {
 	font-size: 40px;
 	float:left;
 	width: 100px;
-	height: 80px;
+	height: 20px;
 	margin: auto 5px;
 }

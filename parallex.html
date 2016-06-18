@@ -30,10 +30,30 @@
 				<li class="layer" id="second-page" data-depth="0">
 					<h1>Projects</h1>
 						<div id="projects">
-							<div id="project-1"><h3>Happy Diary</h3></div>
-							<div id="project-2"><h3>Travel App</h3></div>
-							<div id="project-3"><h3>WDI Conference</h3></div>
-							<div id="project-4"><h3>Run Panda Run</h3></div>
+							<div id="project-1">
+								<a href="#">
+								<h3>Super Duper Happy</h3>
+								<img class="project-images" src="images/feelgoodapp.png"></a>
+								<p>A blog site for users to share their happy and inspiring stories in the attempt to combat depression. User's are able to signup/login, post stories, and comment.</p>
+							</div>
+							<div id="project-2">
+								<a href="#">
+								<h3>TrvlNotes</h3>
+								<img class="project-images" src="images/trvlNotes.png"></a>
+								<p>A dedicated travel bookmarking list that you use daily while at home, and can sort and view your dream places quickly while you are abroad.</p>
+							</div>
+							<div id="project-3">
+								<a href="#">
+								<h3>WDI Conference</h3>
+								<img class="project-images" src="images/wdiconf2016.png"></a>
+								<p>WDI Conference is a mock technology conference run by the students of General Assembly that includes Conference Brochures, Ticket Booking System, and <a href="http://keitheous.com/gimmick-for-wdi-conference/" class="">Gimmick.</a></p>
+							</div>
+							<div id="project-4">
+								<a href="http://keitheous.com/pandagame/">
+								<h3>Run Panda Run</h3>
+								<img class="project-images" src="images/runpandarun.png"></a>
+								<p>A problem solving game. A male panda accidentally mistake for a female panda put in the breeding pen during mating season. Plan your escape.</p>
+							</div>
 						</div>
 					<h1>Contacts</h1>
 						<div id="contacts">
@@ -90,7 +110,7 @@
 
 		var thought;
 		var timeBubble = false;
-		var thoughtsArray = ["Pikachu","Bulbasour","Chamander"];
+		var thoughtsArray = ["Cupcakes","Alistair M","Scrum","G.O.T","Stark","Hanaichi","WDI6","Fassbender","Chris","Bevin","Flo","A.J.M","Johan","D.T","Salmon","Katty D","Wolfie","Lauren JK","Emily B","JB","Hugh M","Chao Chi ..","Aly-main","G.Easton","Karina T","Christie M","Matt M","React","AngularJS","C.S.S","HODOR!!","Z-Index","Parallex!","Paulina S","iterm8s!"];
 
 		var clearThoughts = function(){
 
@@ -146,17 +166,17 @@
 			}
 		})
 
-		$("#second-page").css({ "opacity": "1.0 ","z-index": "100"});
-		// $('#next-page').on('click',function(){
-		// 	console.log('next page!');
-		// 	$("#about-me").css({ "opacity": "0.0 ","z-index": "-100"});
-		// 	$("#second-page").css({ "opacity": "1.0 ","z-index": "100"});
-		// })
-		// $('#back-page').on('click',function(){
-		// 	console.log('next page!');
-		// 	$("#about-me").css({ "opacity": "1.0 ","z-index": "100"});
-		// 	$("#second-page").css({ "opacity": "0.0 ","z-index": "-100"});
-		// })
+		// $("#second-page").css({ "opacity": "1.0 ","z-index": "100"});
+		$('#next-page').on('click',function(){
+			console.log('next page!');
+			$("#about-me").css({ "opacity": "0.0 ","z-index": "-100"});
+			$("#second-page").css({ "opacity": "1.0 ","z-index": "100"});
+		})
+		$('#back-page').on('click',function(){
+			console.log('next page!');
+			$("#about-me").css({ "opacity": "1.0 ","z-index": "100"});
+			$("#second-page").css({ "opacity": "0.0 ","z-index": "-100"});
+		})
 
 
 	})
