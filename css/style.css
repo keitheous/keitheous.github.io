@@ -1,20 +1,12 @@
 body {
-	/*user-drag: none;
+	font-family: 'Indie Flower', cursive;
+	background:#FFFFFF url(../images/Background.png) no-repeat;
+	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
 	-webkit-user-select: none;
-	-ms-user-select: none;*/
-}
-
-#bgimg {
-	/*background-color: grey;*/
-	background:#FFFFFF url(../images/Background.png) no-repeat;
-	position: fixed;
- 	top: 0;
-  	left: 0;
-  	height: 100vw;
-  	width: 100vw;
+	-ms-user-select: none;
 }
 
 #thought-bubble #thoughts{
@@ -25,22 +17,22 @@ body {
 	z-index: 10;
 }
 #thought-topic {
-	/*display:none;*/
+	display:none;
 	margin-top: 390px;
 	margin-left: 55px;
-	font-family: 'Indie Flower', cursive;
 	font-weight: bold;
 	font-size: 1.5em;
 }
 
 #background-snow img {
+	float: right;
 	opacity: 0.90;
 	margin-left: 500px;
 	margin-top: 150px;*/
 	height: 400px;
 	width: 800px;
-	z-index: 100;
 	position:relative;
+	z-index: auto;
 
 }
 #foreground-snow img{
@@ -51,6 +43,7 @@ body {
 }
 
 #background-floor img {
+	width: 100vw;
 	position:relative;
 	margin-top: 540px;
 	margin-left: 100px;
@@ -62,39 +55,99 @@ body {
 	margin-left: 0;
 }
 
-
-#snowman img{
+#snowman{
 	position: relative;
 	margin-left: 180px;
 	margin-top: 400px;
 	cursor: grab;
-  cursor: -webkit-grab;
-  z-index: 5;
-
+	cursor: -webkit-grab;
+	z-index: 400;
 }
 
-#cloudOne img {
-	cursor: pointer;
-	margin-left: 950px;
+#cloudThree img{
+	margin-left: 250px;
 	margin-top: 10px;
 }
 
 #cloudTwo img{
-	cursor: pointer;
 	margin-left: 600px;
 	margin-top: 18px;
 }
-#cloudThree img{
-	cursor: pointer;
-	margin-left: 250px;
+
+#cloudOne img {
+	margin-left: 950px;
 	margin-top: 10px;
 }
-.about-me{
 
+h1 {
+	font-size: 3em;
+	margin: 0;
+	text-decoration: underline;
 }
-.contact{
-
+p {
+	margin: 5px auto;
+	font-size: 1.1rem;
+	letter-spacing: 2.5px;
+	font-weight: 900;
 }
-.portfolio{
 
+#next-page {
+	font-size: 1.5rem;
+	text-align: right;
+	display: block;
+	color: purple;
+	text-decoration: none;
+}
+#back-page {
+	font-size: 1.5rem;
+	text-align: left;
+	display:block;
+	margin-left: 30px;
+	vertical-align: top;
+	color: purple;
+	text-decoration: none;
+}
+
+#about-me, #second-page{
+	position: relative;
+	/*background-color: white;*/
+	opacity: 0;
+	margin-left: 340px;
+	height: 500px;
+	width: 950px;
+	color: #2F4F4F;
+	text-align: center;
+}
+#projects {
+	/*background-color: red;*/
+	height: 300px;
+	width: 950px;
+	display: inline-block;
+}
+#project-1, #project-2, #project-3, #project-4 {
+	border-radius: 20px;
+	float: left;
+	height: 300px;
+	width: 225px;
+	margin: auto 5px;
+	background: rgba(255, 255, 255, 1);
+}
+
+#contacts {
+	margin: 0;
+	padding: 0;
+	/*background-color: red;*/
+	height: 80px;
+	width: 330px;
+	display: inline-block;
+}
+#instagram-icon, #github-icon, #linkedin-icon {
+	padding-top: 10px;
+	color: #2F4F4F;
+	border-radius: 25px;
+	font-size: 40px;
+	float:left;
+	width: 100px;
+	height: 80px;
+	margin: auto 5px;
 }
