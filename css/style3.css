@@ -25,7 +25,7 @@ body {
 #snowman{
 	position: relative;
 	left: 100%;
-	margin-top: 250%;
+	margin-top: 285%;
 	cursor: grab;
 	cursor: -webkit-grab;
 	z-index: 400;
@@ -33,8 +33,8 @@ body {
 
 #thought-bubble #thoughts{
 	/*display:none;*/
-	margin-top: 180%;
-	margin-left: 0%;
+	margin-top: 160%;
+	margin-left: 0;
 	position: relative;
 	z-index: 10;
 }
