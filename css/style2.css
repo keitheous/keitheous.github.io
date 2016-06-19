@@ -1,0 +1,157 @@
+body {
+	font-family: 'Indie Flower', cursive;
+	background:#FFFFFF url(../images/Background.png) no-repeat left top;
+  background-size: 100%;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+#background-floor img {
+	width: 100%  ;
+	position:absolute;
+	margin-top: 40%;
+	margin-left: 0;
+}
+
+#foreground-floor img {
+	position:relative;
+	width: 100%;
+	margin-top: 40%;
+	margin-left: 0;
+}
+#snowman{
+	position: relative;
+	margin-left: 100%;
+	margin-top: 250%;
+	cursor: grab;
+	cursor: -webkit-grab;
+	z-index: 400;
+}
+
+#thought-bubble #thoughts{
+	/*display:none;*/
+	margin-top: 160%;
+	margin-left: 0;
+	position: relative;
+	z-index: 10;
+}
+#thought-topic {
+	margin-top: 28%;
+	margin-left: 5%;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#cloudThree img{
+	margin-left: 250%;
+	margin-top: 5%;
+}
+
+#cloudTwo img{
+	margin-left: 50%;
+	margin-top: 5%;
+}
+
+#cloudOne img {
+	margin-left: 150%;
+	margin-top: 2%;
+}
+
+#foreground-snow img{
+	height: 100%;
+	width: 70%;
+	margin-left: 50%;
+	margin-top: 20%;
+}
+#background-snow img {
+	float: right;
+	opacity: 0.90;
+	margin-top: 10%;
+  margin-right: 10%;
+	height: 70%;
+	width: 70%;
+	position:relative;
+}
+
+h1 {
+	font-size: 3em;
+	margin: 0;
+	text-decoration: underline;
+}
+p {
+	margin: 1% auto;
+	font-size: 1.2rem;
+	letter-spacing: 2.5px;
+	font-weight: 900;
+}
+
+#about-me, #second-page{
+	position: relative;
+	opacity: 0;
+	/*background-color: white;*/
+	margin-left: 23%;
+	/*height: 500%;*/
+	width: 75%;
+	color: #2F4F4F;
+	text-align: center;
+}
+#next-page {
+	font-size: 1.5rem;
+	float: right;
+	display: block;
+	color: purple;
+	text-decoration: none;
+}
+.project-images{
+	height: 30%;
+	width: 75%;
+	display: block;
+	margin: 0 auto;
+}
+#projects {
+  padding-top: 0;
+	/*background-color: red;*/
+	height: 13%;
+	width: 100%;
+	display: inline-block;
+}
+
+h3{
+	margin: 2% auto;
+	text-decoration: underline;
+}
+#project-1, #project-2, #project-3, #project-4 {
+	float: left;
+	height: 100%;
+	width: 24%;
+	margin: auto 5px;
+
+}
+#contacts {
+	margin: 0;
+	padding: 0;
+	background-color: red;
+  height:1.5%;
+	width: 32%;
+	display: inline-block;
+}
+#instagram-icon, #github-icon, #linkedin-icon {
+  background-color: yellow;
+	color: #2F4F4F;
+	/*border-radius: 25px;*/
+	font-size: 3rem;
+	float:left;
+	width: 30%;
+	margin: auto 0.2rem;
+}
+#back-page {
+  margin-left: 5%;
+  font-size: 1.5rem;
+	text-align: left;
+	display: block;
+	color: purple;
+	text-decoration: none;
+}
