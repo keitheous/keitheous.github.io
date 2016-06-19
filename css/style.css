@@ -1,3 +1,5 @@
+
+
 body {
 	font-family: 'Indie Flower', cursive;
 	background:#FFFFFF url(../images/Background.png) no-repeat;
@@ -108,7 +110,6 @@ p {
 	text-align: left;
 	display:block;
 	margin-left: 30px;
-	vertical-align: top;
 	color: purple;
 	text-decoration: none;
 }
