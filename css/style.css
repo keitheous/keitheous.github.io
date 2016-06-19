@@ -2,16 +2,13 @@
 
 body {
 	font-family: 'Indie Flower', cursive;
-	background:#FFFFFF url(../images/Background.png) no-repeat center center fixed;
-	width: 1200px;
-	height: 800px;
+	background:#FFFFFF url(../images/Background.png) no-repeat;
 	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
-	zoom: 1.5;
 }
 body img {
 	max-width:100%
