@@ -133,13 +133,13 @@ h3{
 #contacts {
 	margin: 0;
 	padding: 0;
-	background-color: red;
+	/*background-color: red;*/
   height:1.5%;
 	width: 32%;
 	display: inline-block;
 }
 #instagram-icon, #github-icon, #linkedin-icon {
-  background-color: yellow;
+  /*background-color: yellow;*/
 	color: #2F4F4F;
 	/*border-radius: 25px;*/
 	font-size: 3rem;
