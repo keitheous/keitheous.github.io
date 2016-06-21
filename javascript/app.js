@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   var thought;
   var timeBubble = false;
-  var thoughtsArray = ["Cupcakes","Alistair M","G.O.T","Stark","Hanaichi","WDI6","Fassbender","Chris","Bevin","Flo","A.J.M","Johan","D.T","Salmon","Katty D","Wolfie","Lauren JK","Emily B","JB","Hugh M","Chao Chi ..","Aly-main","G.Easton","Karina T","Christie M","Matt M","HODOR!!","Parallex!","Paulina S","iterm8s!"];
+  var thoughtsArray = ["Cupcakes","Alistair","G.O.T","Hanaichi","WDI6","Fassbender","Chris","Bevin","Flo","Maksalaatikko","Johan","D.T","Salmon","Katty","Wolfie","Lauren","Emily","JB","Hugh","Chao - Bye","Aly-main","Easton","Karina","Christie","Matt ","HODOR!!","Parallex!","Pauliina","iterm8s"];
 
   var animate = function(){
 
