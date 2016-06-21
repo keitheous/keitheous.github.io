@@ -1,7 +1,7 @@
 keitheous.com
 =============
 
-This is a personal website to promote my work and let the world know I am as a Web Developer. I have decided to test out parallax.js by Matthew Wagerfield (you can visit his website here [link](http://matthew.wagerfield.com/parallax/)) for my website to give users a 3D view while browsing through the page. This page is YET TO BE a responsive designed webpage.
+This is a personal website to promote my work and let the world know I am as a Web Developer. I have decided to test out parallax.js by Matthew Wagerfield (you can visit his website here [link](http://matthew.wagerfield.com/parallax/)) for my website to give users a 3D view while browsing through the page. **This page is YET TO BE a responsive designed webpage**.
 
 Understanding Parallax.js
 -------------------------
@@ -22,4 +22,4 @@ The thought bubble is timed. An array of thoughts are hardcoded and displayed ra
 
 Future Improvements
 -------------------
-In the future, I would like to implement Responsive Web Design to give viewers a pleasant experience, while viewing through different platforms. 
+In the future, I would like to implement Responsive Web Design to give viewers a pleasant experience, while viewing through different platforms.
