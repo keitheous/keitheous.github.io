@@ -10,16 +10,16 @@ Parallax.js utilizes class "layer" and meta-data (0.0-1.0) to sort the images in
 
 Navigating through the page
 ---------------------------
-The page includes an About Me section, as well as, a Contact and Project section which is accessible by clicking on the SnowMan. These images are drawn using Paint, affordable and time effective. Pixel-wise, meh. Some day when I can afford Adobe Illustrator, I'll come back and make the changes.
+The page includes an About Me section, as well as, a Contact and Project section which are accessible by clicking on the SnowMan. These images are drawn using Paint, affordable and time effective. Pixels-wise, meh. Some day when I can afford Adobe Illustrator, I'll come back and make the changes.
 
 Initially, I wanted to make the clouds into navigation buttons. I soon realized that this was harder to accomplish due to the nature of Parallax.js where images are stacked on top of one another and the front-most element becomes the only clickable element on the stack.
 
 Animation
 ---------
-There are two layers of "snow-balls" moving up and down alternately in the back and foreground. This is accomplished using JQuery's animate and delay. Similar effects are implemented to the clouds.
+There are two layers of "snow-balls"(representing falling snow) moving up and down alternately in the back and foreground. This is accomplished using JQuery's animate and delay. Similar effects are implemented to the clouds.
 
-The thought bubble is timed. An array of thoughts are hardcoded and displayed randomly. When the SnowMan is clicked, and if else statement turn thoughts into "success..".
+The thought bubble is timed. An array of thoughts are hardcoded and displayed randomly. When the SnowMan is clicked, an if else statement turns thoughts into "success..".
 
 Future Improvements
 -------------------
-In the future, I would like to implement Responsive Web Design to give viewers a pleasant experience, while viewing through different platforms.
+In the future, I would like to implement Responsive Web Design to give users a pleasant viewing experience, across different viewing platforms.
