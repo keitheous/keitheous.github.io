@@ -5,7 +5,7 @@ $(document).ready(function(){
   var thought;
   var timeBubble = false;
   var thoughtsArray = [
-    "Job applications!";
+    "Job applications!"
   ];
 
   var animate = function(){
