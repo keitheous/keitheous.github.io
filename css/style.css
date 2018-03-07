@@ -3,9 +3,9 @@ h1 {
 
 }
 
-/*body {
+body {
 	font-family: 'Indie Flower', cursive;
-	/*background:#FFFFFF url(../images/Background.png) no-repeat;*/
+	background:#FFFFFF url(../images/Background.png) no-repeat;
 	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
