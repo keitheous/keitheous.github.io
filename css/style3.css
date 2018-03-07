@@ -46,16 +46,19 @@ body {
 }
 
 #cloudThree img{
+	z-index: 1000;
 	margin-left: 250%;
 	margin-top: 5%;
 }
 
 #cloudTwo img{
+	z-index: 1000;
 	margin-left: 50%;
 	margin-top: 5%;
 }
 
 #cloudOne img {
+	z-index: 1000;
 	margin-left: 150%;
 	margin-top: 2%;
 }
