@@ -9,19 +9,21 @@ body {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 }
-#background-floor img {
+/* #background-floor img {
 	width: 100%  ;
 	position:absolute;
 	margin-top: 40%;
 	margin-left: 0;
-}
+} */
 
-/* #foreground-floor img {
-	position:relative;
+#foreground-floor img {
 	width: 100%;
 	margin-top: 40%;
 	margin-left: 0;
-} */
+	position:fixed;
+	bottom:0px;
+	left:50%;
+}
 #snowman{
 	position: relative;
 	left: 100%;
