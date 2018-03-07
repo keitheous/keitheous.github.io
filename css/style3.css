@@ -17,9 +17,8 @@ body {
 }
 
 #foreground-floor img {
-	position:relative;
-	width: 100%;
-	margin-top: 40%;
+	position:fixed;
+  bottom:0px;
 	margin-left: 0;
 }
 #snowman{
