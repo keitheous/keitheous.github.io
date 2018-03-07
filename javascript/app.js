@@ -4,7 +4,12 @@ $(document).ready(function(){
 
   var thought;
   var timeBubble = false;
-  var thoughtsArray = ["Cupcakes","Alistair","G.O.T","Hanaichi","WDI6","Fassbender","Chris","Bevin","Flo","Maksalaatikko","Johan","D.T","Salmon","Katty","Wolfie","Lauren","Emily","JB","Hugh","Chao - Bye","Aly-main","Easton","Karina","Christie","Matt ","HODOR!!","Parallex!","Pauliina","iterm8s"];
+  var thoughtsArray = [
+    "Resume","Job Application","Winter","React",
+    "Angular","Ruby on Rails","Need a job","Add value","PSQL",
+    "Dont give up","Open Source", "Internship", "Diversity",
+    "Dedication", "Hire me please!"
+  ];
 
   var animate = function(){
 
