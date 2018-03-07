@@ -1,7 +1,9 @@
 body {
+	position: relative;
+	z-index: -1000;
 	font-family: 'Indie Flower', cursive;
 	background:#FFFFFF url(../images/Background.png) no-repeat left top;
-  background-size: 100%;
+  /* background-size: 100%; */
 	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
