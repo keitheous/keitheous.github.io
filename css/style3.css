@@ -11,7 +11,7 @@ body {
 }
 #background-floor img {
 	width: 100%  ;
-	position:absolute;
+	position:relative;
 	margin-top: 40%;
 	margin-left: 0;
 }
