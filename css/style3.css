@@ -11,16 +11,17 @@ body {
 }
 #background-floor img {
 	width: 100%  ;
-	position:relative;
+	position:absolute;
 	margin-top: 40%;
 	margin-left: 0;
 }
 
-#foreground-floor img {
-	position:fixed;
-  bottom:0px;
+/* #foreground-floor img {
+	position:relative;
+	width: 100%;
+	margin-top: 40%;
 	margin-left: 0;
-}
+} */
 #snowman{
 	position: relative;
 	left: 100%;
