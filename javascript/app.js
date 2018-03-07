@@ -5,10 +5,7 @@ $(document).ready(function(){
   var thought;
   var timeBubble = false;
   var thoughtsArray = [
-    "Resume","Job Application","Winter","React",
-    "Angular","Ruby on Rails","Need a job","Add value","PSQL",
-    "Dont give up","Open Source", "Internship", "Diversity",
-    "Dedication", "Hire me please!"
+    "Job applications!";
   ];
 
   var animate = function(){
