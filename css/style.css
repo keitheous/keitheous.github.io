@@ -1,172 +1,35 @@
-h1 {
-	text-decoration: none
-
-}
-
 body {
-	font-family: 'Indie Flower', cursive;
-	background:#FFFFFF url(../images/Background.png) no-repeat;
-	user-drag: none;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
+  /* background: linear-gradient(to right, lightgrey, azure, aliceblue, peachpuff, lightyellow); */
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-*#thought-bubble #thoughts{*/
-	display:none;
-	margin-top: 350px;
-	margin-left: 10px;
-	position: relative;
-	z-index: 10;
-}
-#thought-topic {
-	/*padding-left:5px; */
-	display:none;
-	margin-top: 390px;
-	margin-left: 55px;
-	font-weight: bold;
-	font-size: 1.5em;
-}
-
-#background-snow img {
-	float: right;
-	opacity: 0.90;
-	margin-left: 500px;
-	margin-top: 150px;*/
-	height: 400px;
-	width: 800px;
-	position:relative;
-	z-index: auto;
-
-}
-#foreground-snow img{
-	height: 300px;
-	width: 780px;
-	margin-left: 500px;
-	margin-top: 170px;
-}
-
-#background-floor img {
-	width: 1200px;
-	position:relative;
-	margin-top: 530px;
-	margin-left: 120px;
-}
-
-#foreground-floor img {
-	position:fixed;
-	width: 1388px;
-	margin-top: 550px;
-	margin-left: 0;
-}
-
-#snowman{
-	position: relative;
-	margin-left: 180px;
-	margin-top: 400px;
-	cursor: grab;
-	cursor: -webkit-grab;
-	z-index: 400;
-}
-
-#cloudThree img{
-	margin-left: 250px;
-	margin-top: 10px;
-}
-
-#cloudTwo img{
-	margin-left: 600px;
-	margin-top: 18px;
-}
-
-#cloudOne img {
-	margin-left: 950px;
-	margin-top: 10px;
-}
-
-h1 {
-	font-size: 3em;
-	margin: 0;
-	text-decoration: underline;
-}
-p {
-	margin: 5px auto;
-	font-size: 1.1rem;
-	letter-spacing: 2.5px;
-	font-weight: 900;
-}
-
-#next-page {
-	font-size: 1.5rem;
-	text-align: right;
-	display: block;
-	color: purple;
-	text-decoration: none;
-}
-#back-page {
-	font-size: 1.5rem;
-	text-align: left;
-	display:block;
-	margin-left: 30px;
-	vertical-align: top;
-	color: purple;
-	text-decoration: none;
-}
-
-#about-me, #second-page{
-	position: relative;
-	/*background-color: white;*/
-	opacity: 0;
-	margin-left: 340px;
-	height: 500px;
-	width: 950px;
-	color: #2F4F4F;
-	text-align: center;
-}
-#projects {
-	/*background-color: red;*/
-	height: 325px;
-	width: 1000px;
-	display: inline-block;
-}
-h3{
-	margin: 5px auto;
-	text-decoration: underline;
-}
-.project-images{
-	height: 100px;
-	width: 200px;
-	display: block;
-	margin: 0 auto;
 
 
-}
-#project-1, #project-2, #project-3, #project-4 {
-	border-radius: 20px;
-	float: left;
-	height: 325px;
-	width: 240px;
-	margin: auto 5px;
-	/*background: rgba(255, 255, 255, 1);*/
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+  body img{
+    max-width: 250px;
+  }
+
+  #cloudThree img{
+  	/* margin-left: 250%; */
+  	margin-top: 2%;
+  }
+
 }
 
-#contacts {
-	margin: 0;
-	padding: 0;
-	/*background-color: red;*/
-	height: 80px;
-	width: 330px;
-	display: inline-block;
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  body img{
+    max-width: 200px;
+  }
+
+  #cloudThree img{
+    /* margin-left: 250%; */
+    margin-top: 2%;
+  }
 }
-#instagram-icon, #github-icon, #linkedin-icon {
-	padding-top: 10px;
-	color: #2F4F4F;
-	border-radius: 25px;
-	font-size: 40px;
-	float:left;
-	width: 100px;
-	height: 20px;
-	margin: auto 5px;
-}*/
